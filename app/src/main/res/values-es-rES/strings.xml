@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">CreateTestApp</string>
-    <string name="createTestButton">Crear Test</string>
-    <string name="loadTestButton">Cargar Test</string>
     <string name="titleHintText">Título</string>
     <string name="numberQuestionsText">Nº de Preguntas</string>
+    <string name="searchButton">Buscar</string>
+    <string name="seeAllButton">Ver Todo</string>
 </resources>

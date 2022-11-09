@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">CreateTestApp</string>
-    <string name="createTestButton">Create Test</string>
-    <string name="loadTestButton">Load Test</string>
+    <string name="searchButton">Search</string>
+    <string name="seeAllButton">View all</string>
     <string name="titleHintText">Title</string>
     <string name="numberQuestionsText">Nº of Questions</string>
 </resources>

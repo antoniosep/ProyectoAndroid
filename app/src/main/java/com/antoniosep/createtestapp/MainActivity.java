@@ -2,7 +2,6 @@ package com.antoniosep.createtestapp;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.content.Intent;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.view.View;
@@ -23,18 +22,18 @@ public class MainActivity extends AppCompatActivity {
         dbHelper = new Helper(getApplicationContext(), "Base de datos xuli");
         db = dbHelper.getWritableDatabase();
 
-        createButton = (Button) findViewById(R.id.createTestButton);
-        loadButton = (Button) findViewById(R.id.loadTestButton);
+        createButton = (Button) findViewById(R.id.searchButton);
+        loadButton = (Button) findViewById(R.id.seeAllButton);
     }
 
     public void onClick(View view){
         int id = view.getId();
         switch (id){
-            case R.id.createTestButton:
+            case R.id.searchButton:
                 Toast.makeText(getApplicationContext(), "Create Button", Toast.LENGTH_SHORT).show();
                 setContentView(R.layout.form_test);
                 break;
-            case R.id.loadTestButton:
+            case R.id.seeAllButton:
                 Toast.makeText(getApplicationContext(), "Load Button", Toast.LENGTH_SHORT).show();
                 break;
         }
