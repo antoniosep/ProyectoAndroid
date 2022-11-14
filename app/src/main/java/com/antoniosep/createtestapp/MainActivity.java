@@ -31,7 +31,7 @@ public class MainActivity extends AppCompatActivity {
         switch (id){
             case R.id.searchButton:
                 Toast.makeText(getApplicationContext(), "Search Button", Toast.LENGTH_SHORT).show();
-                setContentView(R.layout.form_test);
+                setContentView(R.layout.search_form);
                 break;
             case R.id.seeAllButton:
                 Toast.makeText(getApplicationContext(), "Load Button", Toast.LENGTH_SHORT).show();
