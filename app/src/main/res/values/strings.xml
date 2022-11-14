@@ -3,4 +3,6 @@
     <string name="searchButton">Search</string>
     <string name="seeAllButton">View all</string>
     <string name="titleHintText">Title</string>
+    <string name="bodyHintText">Message Description</string>
+
 </resources>

@@ -2,7 +2,7 @@
 <resources>
     <string name="app_name">CreateTestApp</string>
     <string name="titleHintText">Título</string>
-    <string name="numberQuestionsText">Nº de Preguntas</string>
     <string name="searchButton">Buscar</string>
     <string name="seeAllButton">Ver Todo</string>
+    <string name="bodyHintText">Descripción del mensaje</string>
 </resources>
