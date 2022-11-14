@@ -2,17 +2,22 @@ package com.antoniosep.createtestapp;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.annotation.SuppressLint;
+import android.content.Intent;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
+
 public class MainActivity extends AppCompatActivity {
 
     Helper dbHelper;
     SQLiteDatabase db;
     Button searchButton, loadButton;
+    FloatingActionButton createButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,8 +27,9 @@ public class MainActivity extends AppCompatActivity {
         dbHelper = new Helper(getApplicationContext(), "Base de datos xuli");
         db = dbHelper.getWritableDatabase();
 
-        searchButton = (Button) findViewById(R.id.searchButton);
-        loadButton = (Button) findViewById(R.id.seeAllButton);
+        searchButton = findViewById(R.id.searchButton);
+        loadButton = findViewById(R.id.seeAllButton);
+        createButton = findViewById(R.id.FloatingButton);
     }
 
     public void onClick(View view){
@@ -36,6 +42,9 @@ public class MainActivity extends AppCompatActivity {
             case R.id.seeAllButton:
                 Toast.makeText(getApplicationContext(), "Load Button", Toast.LENGTH_SHORT).show();
                 break;
+            case R.id.FloatingButton:
+                Intent switchActivityIntent = new Intent(this, CreateActivity.class);
+                startActivity(switchActivityIntent);
         }
     }
 
@@ -44,4 +53,5 @@ public class MainActivity extends AppCompatActivity {
         super.onDestroy();
         db.close();
     }
+
 }
