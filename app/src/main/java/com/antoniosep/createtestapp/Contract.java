@@ -6,8 +6,8 @@ public final class Contract {
     private Contract(){}
 
     public static abstract class Entry implements BaseColumns {
-        public static final String TABLE_NAME = "Nombre_Tabla";
-        public static final String COLUMN_NAME_KEY= "Clave";
-        public static final String COLUMN_NAME_VAL= "Valor";
+        public static final String TABLE_NAME = "NOTAS";
+        public static final String COLUMN_NAME_KEY= "TITULO";
+        public static final String COLUMN_NAME_VAL= "CUERPO";
     }
 }
