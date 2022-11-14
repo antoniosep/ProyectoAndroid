@@ -7,7 +7,7 @@
     tools:context=".CreateForm">
 
     <TextView
-        android:id="@+id/textViewTitle"
+        android:id="@+id/tituloSearch"
         android:layout_width="63dp"
         android:layout_height="35dp"
         android:layout_marginStart="44dp"
@@ -38,7 +38,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textViewTitle"
+        app:layout_constraintTop_toBottomOf="@+id/tituloSearch"
         tools:ignore="DuplicateSpeakableTextCheck" />
 
     <TextView
@@ -51,6 +51,7 @@
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         app:layout_constraintBottom_toTopOf="@+id/editTextBodyText"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
