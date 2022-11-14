@@ -12,7 +12,7 @@ public class MainActivity extends AppCompatActivity {
 
     Helper dbHelper;
     SQLiteDatabase db;
-    Button createButton, loadButton;
+    Button searchButton, loadButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,7 +22,7 @@ public class MainActivity extends AppCompatActivity {
         dbHelper = new Helper(getApplicationContext(), "Base de datos xuli");
         db = dbHelper.getWritableDatabase();
 
-        createButton = (Button) findViewById(R.id.searchButton);
+        searchButton = (Button) findViewById(R.id.searchButton);
         loadButton = (Button) findViewById(R.id.seeAllButton);
     }
 
@@ -30,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
         int id = view.getId();
         switch (id){
             case R.id.searchButton:
-                Toast.makeText(getApplicationContext(), "Create Button", Toast.LENGTH_SHORT).show();
+                Toast.makeText(getApplicationContext(), "Search Button", Toast.LENGTH_SHORT).show();
                 setContentView(R.layout.form_test);
                 break;
             case R.id.seeAllButton:
