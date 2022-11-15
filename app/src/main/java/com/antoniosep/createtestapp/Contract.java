@@ -7,7 +7,7 @@ public final class Contract {
 
     public static abstract class Entry implements BaseColumns {
         public static final String TABLE_NAME = "NOTAS";
-        public static final String COLUMN_NAME_KEY= "TITULO";
-        public static final String COLUMN_NAME_VAL= "CUERPO";
+        public static final String COLUMN_NAME_TITLE= "TITULO";
+        public static final String COLUMN_NAME_BODY= "CUERPO";
     }
 }

@@ -5,4 +5,7 @@
     <string name="searchButton">Buscar</string>
     <string name="seeAllButton">Ver Todo</string>
     <string name="bodyHintText">Descripción del mensaje</string>
+    <string name="badTitleText">Título Inválido</string>
+    <string name="badBodyText">Texto Inválido</string>
+    <string name="createConfirmed">Mensaje Creado!</string>
 </resources>

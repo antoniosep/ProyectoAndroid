@@ -4,5 +4,8 @@
     <string name="seeAllButton">View all</string>
     <string name="titleHintText">Title</string>
     <string name="bodyHintText">Message Description</string>
+    <string name="badTitleText">Invalid Title</string>
+    <string name="badBodyText">Invalid Message</string>
+    <string name="createConfirmed">Message Created!</string>
 
 </resources>

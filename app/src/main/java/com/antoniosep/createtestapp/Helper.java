@@ -10,8 +10,8 @@ public class Helper extends SQLiteOpenHelper {
     public static final String SQL_CREATE_ENTRIES =
             "CREATE TABLE " + Contract.Entry.TABLE_NAME + " (" +
                     Contract.Entry._ID + " INTEGER PRIMARY KEY," +
-                    Contract.Entry.COLUMN_NAME_KEY + " TEXT UNIQUE," +
-                    Contract.Entry.COLUMN_NAME_VAL + " TEXT" +
+                    Contract.Entry.COLUMN_NAME_TITLE + " TEXT UNIQUE," +
+                    Contract.Entry.COLUMN_NAME_BODY + " TEXT" +
                     ")";
 
     public static final String SQL_DELETE_ENTRIES =
