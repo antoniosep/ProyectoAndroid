@@ -25,7 +25,7 @@ public class CreateActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.create_form);
 
-        dbHelper = new Helper(getApplicationContext(), "DB");
+        dbHelper = new Helper(getApplicationContext(), "bdNotas");
         db = dbHelper.getWritableDatabase();
 
         title = findViewById(R.id.editTextTitleText);

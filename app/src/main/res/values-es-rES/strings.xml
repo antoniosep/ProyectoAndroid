@@ -12,6 +12,7 @@
     <string name="tituloNota">Título de la nota</string>
     <string name="descNota">Descripción de la nota</string>
     <string name="notaNoEncontrada">Nota no encontrada</string>
+    <string name="createButton">Crear</string>
     <string name="deleteMessage">Borrar Mensaje</string>
     <string name="noMessagesSaved">No hay mensajes</string>
     <string name="deletedMessage">El mensaje ha sido eliminado</string>

@@ -23,7 +23,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        dbHelper = new Helper(getApplicationContext(), "DB");
+        dbHelper = new Helper(getApplicationContext(), "bdNotas");
         db = dbHelper.getWritableDatabase();
 
         searchButton = findViewById(R.id.searchButton);

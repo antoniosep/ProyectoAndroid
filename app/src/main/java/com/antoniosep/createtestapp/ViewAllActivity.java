@@ -28,7 +28,7 @@ public class ViewAllActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_view_all);
 
-        dbHelper = new Helper(getApplicationContext(), "DB");
+        dbHelper = new Helper(getApplicationContext(), "bdNotas");
         db = dbHelper.getWritableDatabase();
 
         listView = findViewById(R.id.ListView);
