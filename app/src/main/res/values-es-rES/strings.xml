@@ -8,4 +8,5 @@
     <string name="badTitleText">Título Inválido</string>
     <string name="badBodyText">Texto Inválido</string>
     <string name="createConfirmed">Mensaje Creado!</string>
+    <string name="existingTitle">Hay otro mensaje con el mismo título!</string>
 </resources>

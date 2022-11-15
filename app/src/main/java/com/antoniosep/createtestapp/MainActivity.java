@@ -33,18 +33,21 @@ public class MainActivity extends AppCompatActivity {
 
     public void onClick(View view){
         int id = view.getId();
+        Intent switchActivityIntent;
         switch (id){
             case R.id.searchButton:
                 Toast.makeText(getApplicationContext(), "Search Button", Toast.LENGTH_SHORT).show();
-                Intent intent = new Intent(this,SearchForm.class);
-                startActivity(intent);
+                switchActivityIntent = new Intent(this,SearchForm.class);
+                startActivity(switchActivityIntent);
                 break;
             case R.id.seeAllButton:
-                Toast.makeText(getApplicationContext(), "Load Button", Toast.LENGTH_SHORT).show();
+                switchActivityIntent = new Intent(this, ViewAllActivity.class);
+                startActivity(switchActivityIntent);
                 break;
             case R.id.FloatingButton:
-                Intent switchActivityIntent = new Intent(this, CreateActivity.class);
+                switchActivityIntent = new Intent(this, CreateActivity.class);
                 startActivity(switchActivityIntent);
+                break;
         }
     }
 

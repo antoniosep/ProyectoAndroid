@@ -68,9 +68,15 @@ public class CreateActivity extends AppCompatActivity {
             ContentValues values = new ContentValues();
             values.put(Contract.Entry.COLUMN_NAME_TITLE, title);
             values.put(Contract.Entry.COLUMN_NAME_BODY, body);
-            db.insert(Contract.Entry.TABLE_NAME, null, values);
-            Toast.makeText(this, R.string.createConfirmed, Toast.LENGTH_LONG).show();
-            finish();
+
+            long id = db.insert(Contract.Entry.TABLE_NAME, null, values);
+            if(id == -1){
+                Toast.makeText(this, R.string.existingTitle, Toast.LENGTH_LONG).show();
+            }else{
+                id = 0;
+                Toast.makeText(this, R.string.createConfirmed, Toast.LENGTH_LONG).show();
+                finish();
+            }
         }
 
     }
@@ -79,11 +85,6 @@ public class CreateActivity extends AppCompatActivity {
         InputMethodManager inputMethodManager;
         inputMethodManager = (InputMethodManager) getSystemService(INPUT_METHOD_SERVICE);
         inputMethodManager.hideSoftInputFromWindow(v.getWindowToken(), 0);
-    }
-
-    @SuppressLint("Range")
-    public void createNote() {
-
     }
 
 }
