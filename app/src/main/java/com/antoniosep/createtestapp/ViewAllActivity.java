@@ -34,8 +34,7 @@ public class ViewAllActivity extends AppCompatActivity {
     public void listAll() {
         String[] columns = {
                 Contract.Entry._ID,
-                Contract.Entry.COLUMN_NAME_TITLE,
-                Contract.Entry.COLUMN_NAME_BODY
+                Contract.Entry.COLUMN_NAME_TITLE
         };
 
         Cursor cursor = db.query(Contract.Entry.TABLE_NAME, columns, null, null, null, null, null);

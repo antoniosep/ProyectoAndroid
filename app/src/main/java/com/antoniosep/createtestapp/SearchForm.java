@@ -29,7 +29,7 @@ public class SearchForm extends AppCompatActivity
     @SuppressLint("Range")
     public void search()
     {
-        String titulo = editTextTitleText.getText().toString().trim().toLowerCase();
+        String titulo = editTextTitleText.getText().toString();
 
         if(titulo.isEmpty())
         {
@@ -83,7 +83,7 @@ public class SearchForm extends AppCompatActivity
         searchButton2 = (Button) findViewById(R.id.searchButton2);
         editTextTitleText = (EditText) findViewById(R.id.editTextTitleText);
 
-        dbHelper = new Helper(getApplicationContext(), "mydictionary.db");
+        dbHelper = new Helper(getApplicationContext(), "Base de datos xuli");
         db = dbHelper.getWritableDatabase();
         
         tituloNota = (TextView) findViewById(R.id.tituloNota);
