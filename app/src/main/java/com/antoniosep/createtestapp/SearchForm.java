@@ -83,7 +83,7 @@ public class SearchForm extends AppCompatActivity
         searchButton2 = (Button) findViewById(R.id.searchButton2);
         editTextTitleText = (EditText) findViewById(R.id.editTextTitleText);
 
-        dbHelper = new Helper(getApplicationContext(), "Base de datos xuli");
+        dbHelper = new Helper(getApplicationContext(), "DB");
         db = dbHelper.getWritableDatabase();
         
         tituloNota = (TextView) findViewById(R.id.tituloNota);
