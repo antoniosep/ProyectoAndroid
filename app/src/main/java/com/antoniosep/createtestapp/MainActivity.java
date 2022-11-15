@@ -36,7 +36,6 @@ public class MainActivity extends AppCompatActivity {
         Intent switchActivityIntent;
         switch (id){
             case R.id.searchButton:
-                Toast.makeText(getApplicationContext(), "Search Button", Toast.LENGTH_SHORT).show();
                 switchActivityIntent = new Intent(this,SearchForm.class);
                 startActivity(switchActivityIntent);
                 break;

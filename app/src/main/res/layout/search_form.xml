@@ -51,4 +51,32 @@
         app:layout_constraintTop_toBottomOf="@+id/tituloSearch"
         tools:ignore="DuplicateSpeakableTextCheck" />
 
+    <TextView
+        android:id="@+id/tituloNota"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="173dp"
+        android:layout_marginEnd="297dp"
+        android:layout_marginBottom="421dp"
+        android:text="@string/tituloNota"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTitleText"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/descNota"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="56dp"
+        android:layout_marginEnd="248dp"
+        android:text="@string/descNota"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tituloNota" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

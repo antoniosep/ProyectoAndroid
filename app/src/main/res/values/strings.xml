@@ -8,5 +8,8 @@
     <string name="badBodyText">Invalid Message</string>
     <string name="createConfirmed">Message Created!</string>
     <string name="existingTitle">There\'s another message with the same title!</string>
+    <string name="tituloNota">Note title</string>
+    <string name="descNota">Note description</string>
+    <string name="notaNoEncontrada">Note not found</string>
 
 </resources>

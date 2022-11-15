@@ -9,4 +9,7 @@
     <string name="badBodyText">Texto Inválido</string>
     <string name="createConfirmed">Mensaje Creado!</string>
     <string name="existingTitle">Hay otro mensaje con el mismo título!</string>
+    <string name="tituloNota">Título de la nota</string>
+    <string name="descNota">Descripción de la nota</string>
+    <string name="notaNoEncontrada">Nota no encontrada</string>
 </resources>
