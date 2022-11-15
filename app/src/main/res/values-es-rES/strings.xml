@@ -12,4 +12,5 @@
     <string name="tituloNota">Título de la nota</string>
     <string name="descNota">Descripción de la nota</string>
     <string name="notaNoEncontrada">Nota no encontrada</string>
+    <string name="createButton">Crear</string>
 </resources>

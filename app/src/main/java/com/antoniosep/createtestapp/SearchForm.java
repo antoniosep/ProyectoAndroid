@@ -58,6 +58,7 @@ public class SearchForm extends AppCompatActivity
 
             tituloNota.setText(titulo);
             if (meaning.isEmpty()) {
+                Toast.makeText(getApplicationContext(), "No se ha encontrado una nota con ese título", Toast.LENGTH_SHORT).show();
                 descNota.setText(R.string.notaNoEncontrada);
             } else {
                 descNota.setText(meaning);
@@ -83,7 +84,7 @@ public class SearchForm extends AppCompatActivity
         searchButton2 = (Button) findViewById(R.id.searchButton2);
         editTextTitleText = (EditText) findViewById(R.id.editTextTitleText);
 
-        dbHelper = new Helper(getApplicationContext(), "Base de datos xuli");
+        dbHelper = new Helper(getApplicationContext(), "bdNotas");
         db = dbHelper.getWritableDatabase();
         
         tituloNota = (TextView) findViewById(R.id.tituloNota);
