@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">CreateTestApp</string>
+    <string name="app_name">Notas-UMA</string>
     <string name="searchButton">Search</string>
     <string name="seeAllButton">View all</string>
     <string name="titleHintText">Title</string>
@@ -14,5 +14,5 @@
     <string name="createButton">Create</string>
     <string name="deleteMessage">Delete Message</string>
     <string name="noMessagesSaved">There are no messages</string>
-    <string name="deletedMessage">The message was deleted</string>
+    <string name="deletedMessage">The message has been deleted</string>
 </resources>
