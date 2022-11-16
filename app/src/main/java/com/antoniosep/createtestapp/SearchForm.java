@@ -84,6 +84,15 @@ public class SearchForm extends AppCompatActivity
         searchButton2 = (Button) findViewById(R.id.searchButton2);
         editTextTitleText = (EditText) findViewById(R.id.editTextTitleText);
 
+        editTextTitleText.setOnFocusChangeListener(new View.OnFocusChangeListener() {
+            @Override
+            public void onFocusChange(View v, boolean hasFocus) {
+                if (!hasFocus) {
+                    hideSoftKeyboard(v);
+                }
+            }
+        });
+
         dbHelper = new Helper(getApplicationContext(), "bdNotas");
         db = dbHelper.getWritableDatabase();
         

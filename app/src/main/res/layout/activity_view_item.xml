@@ -10,20 +10,21 @@
         android:id="@+id/viewTitleText"
         android:layout_width="302dp"
         android:layout_height="69dp"
+        android:layout_marginStart="52dp"
         android:layout_marginTop="36dp"
+        android:layout_marginEnd="57dp"
         android:textAppearance="@style/TextAppearance.AppCompat.Display2"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/viewBodyText"
-        android:layout_width="389dp"
-        android:layout_height="349dp"
-        android:layout_marginStart="82dp"
-        android:layout_marginTop="32dp"
-        android:layout_marginEnd="-5dp"
+        android:layout_width="299dp"
+        android:layout_height="331dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="57dp"
         android:scrollbars="vertical"
         android:textAppearance="@style/TextAppearance.AppCompat.Display1"
         app:layout_constraintEnd_toEndOf="parent"
@@ -33,15 +34,16 @@
     <Button
         android:id="@+id/button"
         android:layout_width="176dp"
-        android:layout_height="65dp"
+        android:layout_height="56dp"
         android:layout_marginStart="116dp"
         android:layout_marginEnd="119dp"
         android:layout_marginBottom="84dp"
         android:text="@string/deleteMessage"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/viewBodyText"
-        app:layout_constraintVertical_bias="0.47000003" />
+        app:layout_constraintVertical_bias="0.596" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
