@@ -33,7 +33,7 @@ public class SearchForm extends AppCompatActivity
 
         if(titulo.isEmpty())
         {
-            Toast.makeText(getApplicationContext(), "Introduzca un título para buscar", Toast.LENGTH_SHORT).show();
+            Toast.makeText(getApplicationContext(), getString(R.string.invalidTitleSearchToast), Toast.LENGTH_SHORT).show();
             hideSoftKeyboard(editTextTitleText);
         }
         else
@@ -58,7 +58,7 @@ public class SearchForm extends AppCompatActivity
 
             tituloNota.setText(titulo);
             if (meaning.isEmpty()) {
-                Toast.makeText(getApplicationContext(), "No se ha encontrado una nota con ese título", Toast.LENGTH_SHORT).show();
+                Toast.makeText(getApplicationContext(), getString(R.string.noNoteFound), Toast.LENGTH_SHORT).show();
                 descNota.setText(R.string.notaNoEncontrada);
             } else {
                 descNota.setText(meaning);

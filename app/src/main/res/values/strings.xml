@@ -15,4 +15,6 @@
     <string name="deleteMessage">Delete Message</string>
     <string name="noMessagesSaved">There are no messages</string>
     <string name="deletedMessage">The message has been deleted</string>
+    <string name="invalidTitleSearchToast">Introduce a title to search</string>
+    <string name="noNoteFound">There aren´t any notes with this title</string>
 </resources>

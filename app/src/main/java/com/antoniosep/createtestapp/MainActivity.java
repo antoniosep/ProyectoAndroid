@@ -1,3 +1,8 @@
+/*
+    Autores: Álvaro J. Tapia Muñoz y Antonio Sepúlveda Zorrilla
+
+ */
+
 package com.antoniosep.createtestapp;
 
 import androidx.appcompat.app.AppCompatActivity;

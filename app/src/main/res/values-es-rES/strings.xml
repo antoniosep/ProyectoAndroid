@@ -16,4 +16,6 @@
     <string name="deleteMessage">Borrar Mensaje</string>
     <string name="noMessagesSaved">No hay mensajes</string>
     <string name="deletedMessage">El mensaje ha sido eliminado</string>
+    <string name="invalidTitleSearchToast">Introduzca un título para buscar</string>
+    <string name="noNoteFound">No se ha encontrado una nota con ese título</string>
 </resources>
